@@ -1,0 +1,29 @@
+.btn {
+    text-transform: uppercases;
+    color: #fff; 
+    cursor: pointer;   
+}
+
+.btn-readmore, .btn-purchase {
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.btn-readmore {
+    padding: 13px 45px;
+    border: none;
+    background-color: #c8ac48;
+    margin-right: 7.5px;
+}
+
+.btn-purchase {
+    padding: 12px 30px;
+    border: 0.1px solid #fff;
+    background-color: transparent;
+    margin-left: 7.5px;
+}
+
+.btn-readmore:hover, 
+.btn-purchase:hover {
+    background-color: #fff;
+    color: #c8ac48;

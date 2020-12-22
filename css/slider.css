@@ -1,0 +1,46 @@
+.slider {
+    margin: 0 auto;
+}
+
+.slider-picture { 
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.slider-items {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.slider-items__title {
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+.slider-items__decs {
+    color: white; 
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 38px;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+
+.slider-picture::before {
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.3;
+    position: absolute;
+    background-color: #000000;
+}

@@ -1,0 +1,133 @@
+.testimonial-bg {
+    height: 450px;
+    position: relative;
+    background-position: top;
+}
+
+.testimonial .container {
+    padding-top: 100px;
+}
+.testimonial-bg::after {
+    content: "";
+    background-color: #1e2c4a;
+    opacity: 0.9;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.testimonial .container >.row {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.testimonial-left-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.testimonial-left-img__active:,
+.testimonial-left-img__inactive {
+    background-position: center top right; /*vị trí của bức hình phải chỉnh như thế nào đây nhỉ*/
+}
+
+.testimonial-left-img__active {
+    width: 85px;
+    height: 85px;
+    position: relative;
+}
+
+.testimonial-left-img__active::before {
+    content: "";
+    border-top: 1px solid #808899;
+    position: absolute;
+    width: 50px;
+    top: 21px;
+    left: 111px;
+}
+
+.testimonial-left-img__inactive {
+    width: 70px;
+    height: 70px;
+    margin-top: 13px;
+    position: relative;
+    opacity: 0.5;
+}
+
+/* .testimonial-left-img__inactive::after {
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+} */
+
+.testimonila-right-feedback {
+    width: calc(100% - 8.33%*2);
+    right: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+/* ==================== Làm khung ============== */
+.testimonial-content {
+    border: 1px solid #808899;
+    border-top: transparent;
+    text-align: center;
+    padding: 16px 80px 76px 80px;
+}
+.testimonial-content__icon {
+    display: inline-block;
+    transform: translateY(-40px);
+    position: relative;
+}
+
+.testimonial-content::before,
+.testimonial-content::after {
+    content: "";
+    border-bottom: 1px solid #808899;
+    width: calc(50% - 50px);
+    position: absolute;
+    top: 0;
+}
+
+.testimonial-content::before {
+    left: 0;
+}
+
+.testimonial-content::after {
+    right: 0%;
+}
+
+.testimonial-content__text {
+    color: #fff
+}
+
+.testimonial-content__signature p {
+    display: inline-block;
+    color: #c8ac49;
+    text-transform: uppercase;
+    padding-top: 30px;
+    transform: translateX(180px);
+    
+}
+
+.testimonial-content__signature-name::after {
+    content: "|";
+    color: #c8ac49;
+    padding-left: 2px;
+}

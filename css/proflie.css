@@ -1,0 +1,73 @@
+.profile-block {
+    position: relative;
+}
+
+
+
+.profile-block__img {
+    overflow: hidden;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* CSS của tên */
+.profile-block__name {
+    background-color: #c8ac49;
+    position: absolute;
+    bottom: 57px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: bottom 0.5s;
+}
+
+.profile-block__name h1, .profile-block__name p {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+.profile-block__name h1 {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.profile-block__name p {
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+
+.profile-block__name h1::after {
+    content: " - ";
+}
+
+
+/* Hover ra description */
+
+.profile-block:hover .profile-block__name , .profile-block:hover .profile-block__name-decs {
+    bottom: 120px;
+    opacity: 1;
+}
+
+
+/* CSS của icon */
+.profile-block__icon {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(175, 171, 171);
+}
+.profile-block__icon .fa {
+    padding-left: 10px;
+}
+
+.profile-block__name-decs {
+    text-align: center;
+    color: #808899;
+    opacity: 0;
+    transition: all 0.5s;
+}

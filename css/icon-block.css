@@ -1,0 +1,17 @@
+.list-icon-block >.container {
+    transform: translateY(-40px);
+
+}
+
+.icon-block {
+    background-color:#304771;
+    text-align: center;
+}
+
+.list-icon-block [class*="col"]:nth-child(3n+2) .icon-block {
+    background-color: #283c61;
+}
+
+.list-icon-block [class*="col"]:nth-child(3n) .icon-block {
+    background-color: #1e3051;
+}
